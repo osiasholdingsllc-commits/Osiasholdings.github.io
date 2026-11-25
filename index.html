@@ -50,7 +50,7 @@
     header.scrolled { border-bottom-color: var(--line); }
     .nav { display: flex; align-items: center; justify-content: space-between; height: 76px; }
     .brand { display: flex; align-items: center; gap: 12px; }
-    .brand img { height: 40px; width: auto; }
+    .brand .mark { height: 38px; width: auto; }
     .wordmark {
       font-family: "Playfair Display", Georgia, serif;
       color: var(--gold);
@@ -105,7 +105,7 @@
     .emblem::before {
       content: ""; position: absolute; inset: 18px; border-radius: 50%; border: 1px solid rgba(201,168,106,0.15);
     }
-    .emblem img { width: 58%; height: auto; }
+    .emblem .mark { width: 40%; height: auto; }
     .emblem .mono {
       font-family: "Playfair Display", Georgia, serif; color: var(--gold); font-size: clamp(4rem, 9vw, 7rem); line-height: 1;
     }
@@ -213,7 +213,7 @@
   <header id="top">
     <div class="wrap nav">
       <a href="#home" class="brand" aria-label="Osias Holdings home">
-        <img src="logo.png" alt="Osias Holdings logo" onerror="this.remove()">
+        <svg class="mark" viewBox="372 197 280 353" fill="none" stroke="#C9A86A" stroke-width="12" stroke-linejoin="round" role="img" aria-label="Osias Holdings shield"><path d="M511.5 211L397 261Q386 266 386 278V400Q386 470 511.5 536Q637 470 637 400V278Q637 266 626 261Z"/><rect x="462" y="294.5" width="99" height="158.5" rx="49.5" ry="45"/><path d="M511.5 241V294.5M511.5 452.5V522"/></svg>
         <span class="wordmark">Osias Holdings</span>
       </a>
       <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
@@ -242,7 +242,7 @@
           </div>
         </div>
         <div class="emblem" aria-hidden="true">
-          <img src="logo.png" alt="" onerror="this.outerHTML='&lt;span class=&quot;mono&quot;&gt;O&lt;/span&gt;'">
+          <svg class="mark" viewBox="372 197 280 353" fill="none" stroke="#C9A86A" stroke-width="8" stroke-linejoin="round" aria-hidden="true"><path d="M511.5 211L397 261Q386 266 386 278V400Q386 470 511.5 536Q637 470 637 400V278Q637 266 626 261Z"/><rect x="462" y="294.5" width="99" height="158.5" rx="49.5" ry="45"/><path d="M511.5 241V294.5M511.5 452.5V522"/></svg>
         </div>
       </div>
     </section>
